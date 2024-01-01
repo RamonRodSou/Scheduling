@@ -1,12 +1,18 @@
 const formPersonalInformation = document.getElementById ("personal_Information")
 const formTypeService = document.getElementById("service")
 const formDate = document.getElementById("date")
-const sectionForm = document.querySelectorAll('.section')
+const divInputs = document.querySelectorAll('.div')
+const divEnd = document.getElementById("end")
+
+
+const formScheduling = document.getElementById("formScheduling")
 
 export const section = {
+    formScheduling,
     formPersonalInformation,
     formTypeService,
     formDate,
-    sectionForm
+    divInputs,
+    divEnd
 
 }

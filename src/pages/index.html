@@ -35,72 +35,83 @@
           </nav>
     </header>
     <main >
-        <section id="personal_Information" class="container section justify-content-center align-items-center">
-            <form class="row g-3 form">
+        <section  class="container section d-flex   justify-content-center align-items-center">
+            <form id="formScheduling" class="row g-3 form">
+              <div id="personal_Information " class="div flex-direction-column">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Fist name</label>
-                    <input type="text" id="fistName" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Last name</label>
-                    <input type="text" id="lastName" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3 telephoneDiv">
-                    <label for="exampleFormControlTextarea1" class="form-label">Telephone</label>
-                    <div class="numberDiv">
-                        <input type="tel" id="telephone" class="form-control telephone" id="exampleFormControlInput1" placeholder="Telephone">
-                        <span class="moreNumber">+</span>
-                  </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary BtnNextPersonalData">Next</button>
-                  </div>
+                  <label for="fistName" class="form-label">Fist name</label>
+                  <input type="text" id="fistName" class="form-control" placeholder="Fist Name">
+                </div>
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" id="lastName" class="form-control" placeholder="Fist Name">
+                </div>
+                <div class="mb-3 telephoneDiv">
+                  <label for="telephone" class="form-label">Telephone</label>
+                  <div class="numberDiv">
+                      <input type="tel" id="telephone" class="form-control telephone" placeholder="Telephone">
+                      <span class="moreNumber">+</span>
+                </div>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary BtnNextPersonalData">Next</button>
+                </div>
+              </div>
+              <div id="service" class="div flex-direction-column " >
+                <div class="mb-3">
+                  <label for="hair" class="form-label">Hair</label>
+                  <input type="text" id="hair" class="form-control"  placeholder="Hair">
+                </div>
+                <div class="mb-3">
+                  <label for="beard" class="form-label">Beard</label>
+                  <input type="text" id="beard" class="form-control"  placeholder="Beard">
+                </div>
+                <div class="mb-3">
+                  <label for="moustache" class="form-label">Moustache</label>
+                  <input type="text" id="moustache" class="form-control"  placeholder="Moustache">
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary BtnNextPersonalData">Next</button>
+                </div>
+              </div>
+              <div id="date" class="div flex-direction-column">
+                <div class="mb-3">
+                  <label for="day" class="form-label">Day</label>
+                  <input type="text" id="day" class="form-control"  placeholder="Day">
+                </div>
+                <div class="mb-3">
+                  <label for="month" class="form-label">Month</label>
+                  <input type="text" id="month" class="form-control"  placeholder="Month">
+                </div>
+                <div class="mb-3">
+                  <label for="hour" class="form-label">Hour</label>
+                  <input type="text" id="hour" class="form-control"  placeholder="Hour">
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary BtnSubmit">Submit</button>
+                </div>
+              </div>
+            </form>
+            <div id="end" class="container justify-content-center align-items-center" >
+              <h1>End....</h1>
+            </div>
+        </section>
+<!-- 
+        <section  id="S" class="container section  justify-content-center align-items-center">
+            <form class="row g-3 form">
+
             </form>
         </section>
 
-        <section  id="service" class="container section  justify-content-center align-items-center">
-            <form class="row g-3 form">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Hair</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">beard</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">moustache</label>
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telephone">
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary BtnNextPersonalData">Next</button>
-                  </div>
-            </form>
-        </section>
-
-        <section id="date" class="container section justify-content-center align-items-center">
+        <section  class="container section justify-content-center align-items-center">
             <form  class="row g-3 form">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Day</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Month</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fist Name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Hour</label>
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telephone">
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary BtnNextPersonalData">Next</button>
-                  </div>
+
             </form>
         </section> 
         
         <section id="end" class="container section justify-content-center align-items-center" >
           <h1>End....</h1>
-        </Section>
+        </Section> -->
           
     </main>
 <script type="module" src="../js/submitForm.js"></script>

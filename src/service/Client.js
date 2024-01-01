@@ -53,3 +53,30 @@ export const client = {
     showClient,
     newCadastre
 }
+
+
+
+// const newCadastre  = async (firstName, lastName, telephone, hair,
+//     beard, moustache, day, mounth, hour) => {
+    
+//     try {
+
+//         const response = await fetch(url, {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+
+//         body: JSON.stringify ({
+
+//             firstName:firstName,
+//             lastName:lastName,
+//             telephone:telephone,
+//             hair:hair,
+//             beard:beard,
+//             moustache:moustache,
+//             day:day,
+//             mounth:mounth,
+//             hour:hour
+//         })
+//     })
